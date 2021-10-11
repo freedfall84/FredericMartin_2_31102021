@@ -32,6 +32,7 @@ body, html{
 
 #menu_navigation a {
     width:33%;
+    height: 80px;
     padding: 10px;
     padding-bottom: 20px;
     padding-top: 30px;
@@ -281,12 +282,13 @@ body, html{
 #groupe_populaire{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 32%;
     align-items: center;
     border-radius: 30px;
     background-color: rgb(240, 240, 240);
     padding: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
 }
 
 #titre_populaire{
@@ -465,3 +467,60 @@ body, html{
     color: black;
     margin-bottom: 10px;
 }
+
+
+
+@media screen and (max-width: 1080px) { 
+    
+    #div_hebergement{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #liste_hebergement{
+        width:100%;
+    }
+
+    #groupe_populaire{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #menu_navigation{
+        width: 50%;
+    }
+ }
+
+
+
+
+
+ @media screen and (max-width: 810px) { 
+    
+    .hebergement{
+        width: 100%;
+    }
+    
+    #div_hebergement{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #liste_hebergement{
+        width:100%;
+        background-color: white;
+    }
+
+    #groupe_populaire{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        order: -1;
+    }
+
+    #menu_navigation{
+        width: 50%;
+    }
+ }
