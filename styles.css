@@ -12,6 +12,7 @@ body, html{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
 }
 
@@ -19,11 +20,10 @@ body, html{
 
 #logo_menu{
     width:8%;
-    margin-right: calc(100%-8%-33%);
+    margin-right: calc(100% - 8% - 25%);
 }
 
 #menu_navigation{
-    width: 33%;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -438,15 +438,12 @@ body, html{
     object-fit: cover;
  }
 
- .activite figcaption{
+ .activite h4, .activite_double h4{
+    margin:0;
     padding: 20px;
     font-weight: bold;
  }
 
- .activite_double figcaption{
-    padding: 20px;
-    font-weight: bold;
- }
 
 
 /* Footer */
@@ -484,12 +481,10 @@ body, html{
 
 @media screen and (max-width: 992px) { 
     
-    #header{
-        align-items: center;
-    }
 
     #logo_menu{
         width:20%;
+        margin-right: 0;
     }
 
     #information{
@@ -675,7 +670,10 @@ body, html{
 
     #liste_hebergement a {
         margin-top: 10px;
-        margin-left: 20px;
+    }
+
+    #liste_hebergement>a{
+        padding-left:20px;
     }
 
     .texte_hebergement{
@@ -740,7 +738,7 @@ body, html{
         height: 150px;
     }
 
-    .description_hebergement_populaire h4, .texte_hebergement h4, .activite figcaption, .activite_double figcaption{
+    .description_hebergement_populaire h4, .texte_hebergement h4, .activite h4, .activite_double h4{
         font-size: 12px;
     }
 
